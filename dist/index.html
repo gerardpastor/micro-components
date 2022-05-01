@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component</title>
+
+    <style>[data-component] {
+  border: 1px solid #000;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+[data-component] [data-component] {
+  border-color: red;
+}
+
+[data-component] > * + * {
+  margin-top: 1rem;
+}
+
+.activable {
+  background: red;
+}
+
+.active {
+  background: #0f0;
+}
+
+#actions {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+</style>
+
+    <!-- <script defer src="component.js" type="module"></script> -->
+    <!-- <script defer src="../../Component.js" type="module"></script> -->
+    <!-- <script defer src="Component-es5-explore.js" type="module"></script> -->
+    <!-- <script defer src="Component-es5.min.js" type="module"></script> -->
+    <!-- <script defer src="Component-original.js" type="module"></script> -->
+    <!-- <script defer src="Component.js" type="module"></script> -->
+    <script defer="" src="/index.34141f74.js"></script>
+  </head>
+  <body>
+    <div data-component="FromClass" id="component">
+      <h1>From class</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+
+        <span data-component="Subcomponent" data-ref="subcomponent">
+          <button data-ref="substract">-</button>
+          <span data-ref="val">*</span>
+          <button data-ref="add">+</button>
+        </span>
+        
+        <span data-ref="subcomponent-value">*</span>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <div data-component="FromObject">
+      <h1>From object</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <div data-component="FromFunction">
+      <h1>From function</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <div data-component="FromArrowFunction">
+      <h1>From arrow function</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <div data-component="FromClass" data-lazy="">
+      <h1>LAZY: From class</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <div data-component="FromObject" data-lazy="">
+      <h1>LAZY: From object</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <div data-component="FromFunction" data-lazy="">
+      <h1>LAZY: From function</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <div data-component="FromArrowFunction" data-lazy="">
+      <h1>LAZY: From arrow function</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+    <div data-component="NonExistingComponent" data-lazy="">
+      <h1>Non Existing Component</h1>
+      <div>Interval: <span data-ref="intVal">0</span></div>
+      <div>
+        <button type="button" data-ref="btn">Button</button>
+        <a href="#" data-ref="anchor">Anchor</a>
+      </div>
+
+      <input data-ref="input">
+      <div data-ref="output"></div>
+    </div>
+
+    <hr>
+
+    <div id="actions">
+      <button id="mount">Mount</button>
+      <button id="unmount">Unmount</button>
+      <button id="mountOne">Mount One</button>
+      <button id="unmountOne">Unmount One</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

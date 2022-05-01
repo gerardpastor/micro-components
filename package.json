@@ -1,0 +1,13 @@
+{
+  "name": "micro-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Gerard Pastor",
+  "devDependencies": {
+    "parcel": "^2.2.0"
+  },
+  "scripts": {
+    "dev": "parcel example/index.html"
+  }
+}
