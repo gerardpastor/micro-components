@@ -27,7 +27,7 @@
           // return all elements that matches selector
           ...root.querySelectorAll(selector),
           // if root matches selector, include it
-          ...(root.matches(selector) ? [root] : []),
+          ...(root.matches && root.matches(selector) ? [root] : []),
         ]
       : // if root is undefined, return an empty array
         [];
