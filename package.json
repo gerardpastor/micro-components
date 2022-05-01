@@ -1,5 +1,5 @@
 {
-  "name": "micro-components",
+  "name": "@gerardpastor/micro-components",
   "version": "1.0.0",
   "main": "index.js",
   "module": "index.esm.js",
